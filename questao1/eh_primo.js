@@ -2,19 +2,29 @@ function eh_primo(num) {
 
     let cont = 1;
 
-    if (num > 1) {
+    if (num <= 100){
 
-        for (i = 2; i <= num; i++) {
+        if (num > 1) {
 
-            if (num%i == 0){
-                cont += 1;
+            for (i = 2; i <= num; i++) {
+
+                if (num%i == 0){
+                    cont += 1;
+                }
+
+            }
+
+            if (cont == 2) {
+                return true
+            }
+
+            else {
+                return false
             }
 
         }
 
-        if (cont == 2) {
-            return true
-        }
+    
 
         else {
             return false
@@ -23,7 +33,7 @@ function eh_primo(num) {
     }
 
     else {
-        return false
+        return "Numero excede o limite maximo"
     }
 
 }
@@ -31,3 +41,4 @@ function eh_primo(num) {
 console.log(eh_primo(1))
 console.log(eh_primo(3))
 console.log(eh_primo(8))
+console.log(eh_primo(101))
