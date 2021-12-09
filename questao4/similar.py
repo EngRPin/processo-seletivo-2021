@@ -10,4 +10,5 @@ def compara_string(a, b):
 compara_string("We need to do something", "There's something that must be done here")
 compara_string("I like to eat peas everyday", "I don't like to eat peanuts very often")
 compara_string("They are currently studying Ukrainian", "They are currently studying in Ukraine")
+compara_string("Hello, how are you?", "Hello, how are you?")
 
